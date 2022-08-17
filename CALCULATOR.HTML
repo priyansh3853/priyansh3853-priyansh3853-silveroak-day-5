@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <h6> <Table></Table></h6>
+</head>
+<body>
+    <b>Enter number1</b><br/>
+    <input type="text" placeholder="number" id="n1"/>
+    <hr/>
+    <b>Enter number2</b><br/>
+    <input type="text" placeholder="number" id="n2"/>
+    <hr/>
+    <button type="button" onclick="ADD()">ADD</button>
+    <button type="button" onclick="MUL()">MUL</button>
+    <button type="button" onclick="SUB()">SUB</button>
+    <button type="button" onclick="DIV()">DIV</button>
+    
+    <p id="p">
+     </p>
+</body>
+<script>
+    function ADD() {
+  let n1 = parseInt(document.getElementById("n1").value);
+  let n2 = parseInt(document.getElementById("n2").value);
+let total = n1 + n2;
+  document.getElementById("p").innerHTML = total;
+}
+function MUL() {
+  let n1 = parseInt(document.getElementById("n1").value);
+  let n2 = parseInt(document.getElementById("n2").value);
+let total = n1 * n2;
+  document.getElementById("p").innerHTML = total;
+}
+function SUB() {
+  let n1 = parseInt(document.getElementById("n1").value);
+  let n2 = parseInt(document.getElementById("n2").value);
+let total = n1 - n2;
+  document.getElementById("p").innerHTML = total;
+}
+function DIV() {
+  let n1 = parseInt(document.getElementById("n1").value);
+  let n2 = parseInt(document.getElementById("n2").value);
+let total = n1 / n2;
+  document.getElementById("p").innerHTML = total;
+}
+</script>
+</html>
